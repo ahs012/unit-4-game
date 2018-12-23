@@ -11,6 +11,13 @@ var lost = 0;
 var win = 0;
 var firstNumber = 0;
 
+var gemImages = [
+    "http://pm1.narvii.com/6550/75057a2e15d9a02874a8c96691ce62a5c8846007_00.jpg",
+    "http://pixelartmaker.com/art/0918c614af7f5de.png",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw5Uou7XEM0k--WIbO7OHLQMoHZLhA1AaZGpisfLl-tuY0EPBbwQ",
+    "http://pm1.narvii.com/6534/bdfbc138ef5276a861d60ea05813b1bbf6df73ab_00.jpg",
+]
+
 var startGame = function(){
     //clears value of crystals for new game
     $(".crystals").empty();
@@ -28,8 +35,12 @@ var startGame = function(){
     var crystal = $("<div>");
         crystal.attr({
             "class": "crystal",
-            "randomValue":random
-        });
+            "randomValue":random,
+            });
+            crystal.css({
+                "background-image":"url('" + gemImages[i] + "')",
+                "background-size":"cover",
+            });
 
     $(".crystals").append(crystal);
     }
