@@ -47,8 +47,7 @@ var startGame = function(){
 }
 
 startGame();
-//event delegation???
-//about line 41- Not sure what this does exactly, but I orginaly had $(".crystal).on("click",function() and it wasnt letting the game restart.. saw this online and idk why but it works.
+
 $(document).on("click", ".crystal", function(){
     var value = parseInt($(this).attr("randomValue"));
     firstNumber+= value;
@@ -69,6 +68,7 @@ $(document).on("click", ".crystal", function(){
         startGame();
         
     }
+    $("#currentScore").html("Current Score: " + firstNumber);
     console.log(firstNumber);
 });
 
