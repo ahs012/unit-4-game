@@ -1,0 +1,89 @@
+header{
+    background-color: bisque;
+    width:475px;
+    height:125px;
+    border: 4px solid;
+    margin: 2px;
+    font-size: 50px;
+    align-content: center;
+}
+.gemButtons{
+    width:475px;
+    height:125px;
+    border: 4px solid;
+    margin: 2px;
+    background-color: bisque;
+}
+body{
+    background-color: burlywood;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.winloss{
+    width:475px;
+    height:75px;
+    border: 4px solid;
+    margin:2px;
+    background-color: bisque;
+    font-size: 30px;
+}
+
+img{
+    width: 50px;
+    
+}
+.instructions{
+    width:475px;
+    height:125px;
+    border: 4px solid;
+    margin: 2px;
+    font-size: 14px;
+    font-weight: bolder;
+    background-color: bisque;
+    
+}
+.numberGoal{
+    width:475px;
+    height:85px;
+    margin:2px;
+    border: 4px solid;
+    background-color: bisque;
+    font-size: 36px;
+}
+#win{
+    width:475px;
+    height:85px;
+    margin:2px;
+    border: 4px solid;
+    background-color: bisque;
+    font-size: 36px;
+
+}
+#loss{
+    width:475px;
+    height:85px;
+    margin:2px;
+    border: 4px solid;
+    background-color: bisque;
+    font-size: 36px;
+}
+#currentScore{
+    width:475px;
+    height:85px;
+    margin:2px;
+    border: 4px solid;
+    background-color: bisque;
+    font-size: 36px;
+}
+
+.crystals{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.crystal{
+    border: 2px solid black;
+    height: 200px;
+    width: 200px;
+   
+}
